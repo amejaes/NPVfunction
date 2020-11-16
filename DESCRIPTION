@@ -1,15 +1,13 @@
 Package: NPV
-Title: What the Package Does (One Line, Title Case)
+Title: Calculates the total NPV
 Version: 0.0.0.9000
 Authors@R: 
     person(given = "First",
            family = "Last",
            role = c("aut", "cre"),
-           email = "first.last@example.com",
-           comment = c(ORCID = "YOUR-ORCID-ID"))
-Description: What the package does (one paragraph).
-License: `use_mit_license()`, `use_gpl3_license()` or friends to
-    pick a license
+           email = "amejaes@gmail.com")
+Description: This function calculates the total NPV based on a user-defined discount rate and a vector or list of the yearly profits. 
+License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true
 Roxygen: list(markdown = TRUE)
