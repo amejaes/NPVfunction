@@ -13,3 +13,4 @@ NPV <- function(x, y) {
   sum(purrr::map2_dbl(x, y, ~(.y+1)^.x))
 }
 
+
