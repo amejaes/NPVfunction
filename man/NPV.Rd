@@ -19,4 +19,5 @@ Calculate total NPV
 }
 \examples{
 NPV(1:10, 0.05)
+
 }

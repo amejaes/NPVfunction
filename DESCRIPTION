@@ -6,7 +6,7 @@ Authors@R:
            family = "Last",
            role = c("aut", "cre"),
            email = "amejaes@gmail.com")
-Description: This function calculates the total NPV based on a user-defined discount rate and a vector or list of the yearly profits. 
+Description: Calculates the sum NPV based on a discount rate and yearly profits.
 License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true
@@ -17,5 +17,6 @@ Suggests:
     knitr,
     rmarkdown
 Imports: 
-    purrr
+    purrr,
+    qpdf
 VignetteBuilder: knitr

@@ -9,7 +9,11 @@
 #'
 #' @examples
 #' NPV(1:10, 0.05)
+#'
 NPV <- function(x, y) {
+  if(length(y) > 1) {
+    stop('I am so sorry, but this function only works when the number of elements in y is 1.')
+  }
   sum(purrr::map2_dbl(x, y, ~(.y+1)^.x))
 }
 
