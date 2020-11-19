@@ -15,9 +15,9 @@ NPV(x, y)
 A vector containing the sum of the NPV
 }
 \description{
-Calculate total NPV
+Calculate the total NPV from yearly profits and a discount rate
 }
 \examples{
 NPV(1:10, 0.05)
-
+NPV(c(200, 180, 240), 0.08)
 }

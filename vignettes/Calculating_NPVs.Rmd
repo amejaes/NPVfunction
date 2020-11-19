@@ -1,0 +1,35 @@
+---
+title: "Calculating_NPVs"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{Calculating_NPVs}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+```{r setup}
+library(NPV)
+```
+
+This vignette documents a real-world example of the NPV function.
+
+A Canadian seafood exporter has been open for the last five years. In the company's first year, it only made $100, the following four years, the yearly profits were $1000, $2500, $3200, and $4500. The company would like to calculate its total NPV over the lifetime of the business using the Canadian Government's discount rate, when including inflation, of 5.8%. Thus, instead of using excel or manually calculating the NPV for every year, the company can use this function:
+
+```{r}
+NPV(c(100, 1000, 2500, 3200, 4500), 0.058)
+```
+
+Later, the company discovered that their calculations were wrong and they actually lost a lot of money in their most recent year due to a lost shipment. No problem, we can adjust the function.
+
+```{r}
+NPV(c(100, 1000, 2500, 3200, -5000), 0.058)
+```
+
+So, here is a simple example of how you can also employ this function. 

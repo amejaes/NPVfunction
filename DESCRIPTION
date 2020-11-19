@@ -1,12 +1,13 @@
 Package: NPV
-Title: Calculates the total NPV
+Title: Calculating the total NPV
 Version: 0.0.0.9000
 Authors@R: 
     person(given = "First",
            family = "Last",
            role = c("aut", "cre"),
            email = "amejaes@gmail.com")
-Description: Calculates the sum NPV based on a discount rate and yearly profits.
+Description: This function calculates the total NPV based on a user-defined 
+    discount rate and a numerical vector of yearly profits.
 License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true
@@ -17,6 +18,5 @@ Suggests:
     knitr,
     rmarkdown
 Imports: 
-    purrr,
-    qpdf
+    purrr
 VignetteBuilder: knitr
