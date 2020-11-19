@@ -39,7 +39,7 @@ To create the function, I first started with the simple NPV calculation, which i
 
 In this equation, y is the discount rate and x represents the yearly profit. 
 
-Next, I knew that I needed to include a loop, so that we could calculate the NPV over a multiple years. To do so, I decided to employ the purrr function, map2_dbl. Finally, I used sum() to determine the total NPV, regardless of the number of years of data that are calculated. 
+Next, I knew that I needed to include a loop, so that we could calculate the NPV over multiple years. To do so, I decided to employ the purrr function, map2_dbl. Finally, I used sum() to determine the total NPV, regardless of the number of years of data that are calculated. 
 
 ```{r}
 NPV <- function(x, y) {
@@ -80,8 +80,8 @@ Please see the vignette for additional examples.
 
 2. use_git() was run and the files were committed to activate the Git pane. 
 
-3. While DESCRIPTION and NAMESPACE are both created with the package, the function R document was created using use_r("NPV"), and the README and vignette files were created and built using use_readme_rmd(), build_readme(), use_vignette("Calculating_NPVs"), and build_vignettes(). Both the README file and the vignette were manually configured and written by me. 
+3. While DESCRIPTION and NAMESPACE are both created with create_package(), the function's R document was created using use_r("NPV"), and the README and vignette files were created and built using use_readme_rmd(), build_readme(), use_vignette("Calculating_NPVs"), and build_vignettes(). Both the README file and the vignette were manually configured and written. 
 
 4. The DESCRIPTION was filled in manually as well as using devtools, such as use_mit_license("Annie Mejaes") and use_packages("purrr").
 
-5. To run tests, I used use_testthat() followed by use_test("NPV") to create a test files for my function.Then, I manually created the tests. 
+5. To run tests, I used use_testthat() followed by use_test("NPV") to create a test file for my function.Then, I manually created the tests. 

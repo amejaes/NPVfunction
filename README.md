@@ -32,7 +32,7 @@ In this equation, y is the discount rate and x represents the yearly
 profit.
 
 Next, I knew that I needed to include a loop, so that we could calculate
-the NPV over a multiple years. To do so, I decided to employ the purrr
+the NPV over multiple years. To do so, I decided to employ the purrr
 function, map2\_dbl. Finally, I used sum() to determine the total NPV,
 regardless of the number of years of data that are calculated.
 
@@ -81,18 +81,17 @@ Please see the vignette for additional examples.
 2.  use\_git() was run and the files were committed to activate the Git
     pane.
 
-3.  While DESCRIPTION and NAMESPACE are both created with the package,
-    the function R document was created using use\_r(“NPV”), and the
-    README and vignette files were created and built using
-    use\_readme\_rmd(), build\_readme(),
+3.  While DESCRIPTION and NAMESPACE are both created with
+    create\_package(), the function’s R document was created using
+    use\_r(“NPV”), and the README and vignette files were created and
+    built using use\_readme\_rmd(), build\_readme(),
     use\_vignette(“Calculating\_NPVs”), and build\_vignettes(). Both the
-    README file and the vignette were manually configured and written by
-    me.
+    README file and the vignette were manually configured and written.
 
 4.  The DESCRIPTION was filled in manually as well as using devtools,
     such as use\_mit\_license(“Annie Mejaes”) and
     use\_packages(“purrr”).
 
 5.  To run tests, I used use\_testthat() followed by use\_test(“NPV”) to
-    create a test files for my function.Then, I manually created the
+    create a test file for my function.Then, I manually created the
     tests.
